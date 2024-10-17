@@ -20,11 +20,11 @@ serial.onDataReceived(serial.delimiters(Delimiters.NewLine), function () {
     SerialData = serial.readUntil(serial.delimiters(Delimiters.NewLine))
     music.playTone(262, music.beat(BeatFraction.Eighth))
     // This If statement checks that variable with the class name, and if it matches the class name you entered, it will activate the code within that block
-    if (SerialData == "red pen") {
+    if (SerialData == "red") {
         basic.showIcon(IconNames.Heart)
-    } else if (SerialData == "black pen") {
+    } else if (SerialData == "black") {
         basic.showIcon(IconNames.Happy)
-    } else if (SerialData == "blue pen") {
+    } else if (SerialData == "blue") {
         basic.showIcon(IconNames.Meh)
     } else {
     	
